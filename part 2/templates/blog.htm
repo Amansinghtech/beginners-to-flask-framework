@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Myblog
+        </title>
+    </head>
+
+    <body>
+
+        {% for post in posts %}
+
+            <h1>Username: {{ post.username }} </h1>
+            <h3> Date: {{ post.date }} </h3>
+            <p> Content: {{ post.content }} </p>
+
+        {% endfor %}
+
+    </body>
+</html>
